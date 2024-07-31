@@ -9,7 +9,8 @@ export default function UpdateReview({ review, Id }) {
         const token = localStorage.getItem('token')
 
         const response = await fetch(`http://localhost:3000/books/review/update/${Id}`, {
-            method: 'PUT',
+            method: 'PUT'
+            ,
             headers: {
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${token}`
