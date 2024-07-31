@@ -1,0 +1,10 @@
+.WelcomeBody{
+
+    background-image: url("C:\Users\Manoj\Downloads\SPIDER-TASK-2\AUTHENTICATION\src\components\welcome.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    height: 400px;
+    width: 1520px;
+
+}

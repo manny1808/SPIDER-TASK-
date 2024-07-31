@@ -1,0 +1,30 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+  }
+  
+  .navbar-logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .navbar-links li a {
+    color: red;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .navbar-links li a:hover {
+    text-decoration: underline;
+  }
+  

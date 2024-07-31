@@ -1,0 +1,77 @@
+.updateProfile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    max-width: 700px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .updateProfile-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .updateProfile-header h1 {
+    margin: 10px 0;
+    color: #3b3b3b;
+    font-size: 28px;
+    font-weight: 600;
+  }
+  
+  .updateProfile-header h2 {
+    margin: 5px 0;
+    color: #007bff;
+    font-size: 22px;
+    font-weight: 400;
+  }
+  
+  .updateProfile-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .updateProfile-label {
+    font-weight: 500;
+    margin: 10px 0 5px;
+    color: #555;
+  }
+  
+  .updateProfile-input {
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    width: 100%;
+    transition: border-color 0.3s;
+  }
+  
+  .updateProfile-input:focus {
+    border-color: #0056b3;
+  }
+  
+  .updateProfile-input[type="file"] {
+    padding: 8px;
+  }
+  
+  .updateProfile-button {
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .updateProfile-button:hover {
+    background-color: #0056b3;
+  }
+  

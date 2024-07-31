@@ -1,0 +1,47 @@
+.createBook-input{
+
+    display: block;
+    width :230px;
+    height: 25px;
+    border-radius: 20%;
+
+}
+
+.createBookBody{
+
+    margin: 35px 250px;
+    width: 1000px;
+    height: 700px;
+    background-image: url('https://fiverr-res.cloudinary.com/f_auto,q_auto/v1/attachments/generic_asset/asset/53589f7c4c0cb4793cd7fa48bd2951ff-1669733650423/publish%20a%20book%20featured%20image.jpeg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+
+}
+
+.createBook-form{
+
+    margin: 25px 35px;
+
+}
+
+.createBook-label{
+
+    color: yellowgreen;
+
+}
+
+.createBookMsg{
+
+    color: gold;
+    margin-left: 100px;
+
+}
+
+.createBook-HR{
+
+    color: silver;
+    margin-left: 250px;
+
+}
+

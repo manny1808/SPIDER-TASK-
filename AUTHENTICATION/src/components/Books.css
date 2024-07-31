@@ -1,0 +1,152 @@
+.BooksBody {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.BooksBody a {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.BooksBody a:hover {
+  background-color: #0056b3;
+}
+
+.Book {
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+}
+
+.book-image {
+  position: relative;
+}
+
+.book-image img {
+  max-width: 150px;
+  max-height: 200px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  position: relative;
+}
+
+.Book h3 {
+  margin: 5px 0;
+  color: #333;
+}
+
+.Book p {
+  margin: 10px 0;
+  color: #666;
+}
+
+.Book button {
+  align-self: flex-start;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Book button:hover {
+  background-color: #c82333;
+}
+
+.metadata {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.book-image:hover + .book-info .metadata {
+  display: block;
+}
+
+.metadata p {
+  margin: 5px 0;
+}
+
+.filter-section {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  padding: 15px;
+  z-index: 1000; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 10px; 
+  color: #fff;
+}
+
+.filter-section label {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.filter-section select {
+  padding: 8px;
+  font-size: 16px;
+  margin-right: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+}
+
+.filter-section button {
+  padding: 8px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50; 
+  color: #fff; 
+  transition: background-color 0.3s; 
+}
+
+.filter-section button:hover {
+  background-color: #45a049; 
+}
+
+
+  

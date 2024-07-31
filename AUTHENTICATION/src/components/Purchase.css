@@ -1,0 +1,79 @@
+.BooksContainer {
+    display: flex;
+    justify-content: space-between; /* Ensures space between the two columns */
+    padding: 20px;
+}
+
+.BookList {
+    flex: 3; /* Makes BookList twice as wide as PurchasedList */
+    margin-right: 20px; /* Adds space to the right of BookList */
+    padding: 10px;
+    border: 1px solid #ddd; /* Adds a border around the BookList */
+    border-radius: 8px; /* Rounds the corners of the BookList border */
+    background-color: black; /* Adds a background color to BookList */
+}
+
+.PurchasedList {
+    flex: 2; /* Makes PurchasedList half as wide as BookList */
+    margin-left: 10px; /* Adds space to the left of PurchasedList */
+    padding: 10px;
+    border: 1px solid #ddd; /* Adds a border around the PurchasedList */
+    border-radius: 8px; /* Rounds the corners of the PurchasedList border */
+    background-color: black; /* Adds a background color to PurchasedList */
+}
+
+.BookList h2, .PurchasedList h2 {
+    text-align: center;
+    color: orange;
+    margin-bottom: 15px;
+}
+
+.Book {
+    display: flex;
+    align-items: center; /* Aligns items in the center horizontally */
+    margin-bottom: 20px; /* Adds space between books */
+    padding: 10px;
+    border: 1px solid #ddd; /* Adds a border around each book */
+    border-radius: 8px; /* Rounds the corners of the borders */
+    background-color: white; /* Adds a background color to each book */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for better separation */
+    width: 500px;
+}
+
+.Book img {
+    max-width: 150px; /* Sets a fixed width for the book image */
+    height: auto;
+    border-radius: 4px; /* Rounds the corners of the images */
+    margin-right: 15px; /* Adds space between image and text */
+}
+
+.BookDetails {
+    display: flex;
+    flex-direction: column; /* Aligns text vertically */
+    justify-content: center; /* Centers text vertically within BookDetails */
+}
+
+.BookDetails h3, .BookDetails h4 {
+    margin: 5px 0;
+    color: #555;
+}
+
+.BookDetails p {
+    margin: 10px 0;
+    color: #666;
+}
+
+.BookDetails button {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff; /* Bootstrap primary color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade of blue for hover effect */
+}

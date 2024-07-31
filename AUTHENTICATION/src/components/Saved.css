@@ -1,0 +1,63 @@
+
+  .savedBookList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+  }
+  
+  .savedBookList h2 {
+    margin-bottom: 20px;
+    color: red; /* Dark color for the header */
+    font-size: 2em;
+  }
+  
+  .savedBook {
+    display: flex;
+    flex-direction: row;
+    background: #ffffff; /* White background for individual book */
+    border: 2px solid #e0e0e0; /* Light gray border */
+    border-radius: 12px;
+    margin: 15px 0;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Slightly more shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .savedBook:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+  }
+  
+  .savedBook img {
+    max-width: 120px;
+    max-height: 180px;
+    border-radius: 8px;
+    margin-right: 20px;
+    object-fit: cover; /* Ensures the image covers the container */
+  }
+  
+  .savedBookDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #444; /* Darker text color */
+  }
+  
+  .savedBookDetails h3 {
+    margin: 5px 0;
+    color: #333; /* Dark color for titles */
+  }
+  
+  .savedBookDetails h4 {
+    margin: 3px 0;
+    color: #555; /* Slightly lighter color for authors and genre */
+  }
+  
+  .savedBookDetails p {
+    margin: 10px 0;
+    color: #666; /* Light color for descriptions */
+  }
+  
