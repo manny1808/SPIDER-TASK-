@@ -71,10 +71,6 @@ export default function Reviews({ bookTitle }) {
 
       const token = localStorage.getItem('token')
 
-      if(liketoggle === 0)
-
-        {
-
           const response = await fetch(`http://localhost:3000/books/review/like/${Id}`,{
             method: 'PUT',
             headers: {'Authorization' : `Bearer ${token}`}})
@@ -83,19 +79,10 @@ export default function Reviews({ bookTitle }) {
           {
 
             setlikecount((prevlikecount) => (prevlikecount + 1))
-            setliketoggle(1)
-
-            if(disliketoggle === 1)
-            {
-
-              setdislikecount((prevdislikecount) => (prevdislikecount - 1))
-              setdisliketoggle(0)
-
-            }
 
           }
 
-          if(!response.ok)
+          else if(!response.ok)
           {
 
             const res = await fetch(`http://localhost:3000/books/review/like/remove/${Id}`,{
@@ -107,33 +94,12 @@ export default function Reviews({ bookTitle }) {
             {
 
               setlikecount((prevlikecount) => (prevlikecount - 1))
-              setliketoggle(0)
               
             }
 
           }
     
         }
-
-        else if(liketoggle != 0)
-        {
-
-          const res = await fetch(`http://localhost:3000/books/review/like/remove/${Id}`,{
-            method: 'PUT',
-            headers: { 'Authorization' : `Bearer ${token}`}
-          })
-
-          if(res.ok)
-          {
-
-            setlikecount((prevlikecount) => (prevlikecount - 1))
-            setliketoggle(0)
-            
-          }
-
-        }
-
-      }
 
   const dislikes = async(Id) => {
 
